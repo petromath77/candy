@@ -1,0 +1,40 @@
+.works_wrap
+	display: flex
+	flex-direction: column
+	align-items: center
+.span
+	width: 80%
+	font-family: $default-bold
+	font-size: 18px
+	line-height: 26px
+	margin-top: 30px
+	color: #062033
+	text-align: center
+.works_gallery
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+.works_menu
+	width: 45%
+	margin-top: 50px
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		list-style: none
+		flex-wrap: wrap
+		li
+			a
+				text-decoration: none
+				font-family: $default-bold
+				font-size: 14px
+				line-height: 14px
+				padding: 5px 15px
+				color: #062033
+				+transit(all, 0.5s, ease-in-out)
+				&:hover,
+				&:focus
+					background: #5084A3
+					color: #fff
+					border-radius: 5px

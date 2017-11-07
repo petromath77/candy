@@ -1,0 +1,77 @@
+header
+	background: url("../img/head_bg.jpg") no-repeat center 0px
+	background-attachment: scroll
+	background-size: cover
+	height: 100vh
+	min-height: 600px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	align-items: center
+.header_main_cont
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	background-color: rgba(0, 0, 0, 0.35)
+	display: flex
+	justify-content: center
+
+.header_wrap
+	height: 80px
+	display: flex
+	justify-content: center
+	justify-content: space-between
+	align-items: center
+.menu_wrap
+	ul
+		padding: 0
+		display: flex
+		justify-content: space-between
+		list-style: none
+	li
+		margin-right: 10px
+		&:last-child
+			margin-right: 0px
+		a
+			font-family: $default-bold
+			color: #73BFED
+			text-decoration: none
+			padding: 7px 12px
+			border: 1px solid transparent
+			+transit(all, 0.5s, ease-in-out)
+			border-radius: 5px
+
+			&:hover
+				color: #5084A3
+				border: 1px solid #5084A3
+
+.main-text
+	text-align: center
+	margin-bottom: 170px
+	h1
+		font-weight: 100
+		font-size: 60px
+		line-height: 60px
+		letter-spacing: 2px
+		color: #fff
+		margin-bottom: 20px
+		span
+			font-family: $default-bold
+			color: #73BFED
+	h2
+		font-weight: 100
+		font-size: 35px
+		line-height: 35px
+		color: #fff
+		margin-bottom: 25px
+		letter-spacing: 5px
+	p
+		font-size: 18px
+		line-height: 18px
+		color: #fff
+		letter-spacing: 3px
+.head_arrow
+	img
+		width: 50px
+			

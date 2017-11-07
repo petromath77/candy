@@ -1,0 +1,96 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "header"
+@import "features"
+@import "works"
+@import "gallery"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+h1,h2,h3,h4,h5,h6,p,span,ul
+	padding: 0
+	margin: 0
+.container
+	width: 90%
+section
+	padding: 70px 0
+	display: flex
+	justify-content: center
+.title
+	width: 230px
+	display: flex
+	flex-direction: column
+	text-align: center
+	h2
+		font-family: $default-bold
+		font-size: 28px
+		line-height: 28px
+		text-transform: uppercase
+		color: #73bfed
+		margin-bottom: 10px
+.sub_title
+	text-align: center
+	i.fa.fa-heart-o
+		color: #b6b9bb
+		margin: 0 7px 0
+	&::before
+		content: ""
+		display: inline-block
+		vertical-align: middle;
+		border-top: 1px solid #b6b9bb
+		width: 40%
+	&::after
+		content: ""
+		display: inline-block
+		vertical-align: middle;
+		border-top: 1px solid #b6b9bb
+		width: 40%
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" // Всегда в конце
