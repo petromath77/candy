@@ -17,5 +17,61 @@
 	img
 		width: 100%
 		height: auto
+	&:hover 
+		.team_hide
+			opacity: 1
+		.team_item_desc
+			h3
+				color: #5084a3
+.team_item_img
+	position: relative
+	overflow: hidden
+	margin-bottom: 20px
+	
+.team_hide
+	opacity: 0
+	background: rgba(80, 132, 163, 0.85)
+	position: absolute
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	text-align: center
+	height: 100%
+	padding: 20px
+	+transit(all, 0.5s, ease-in-out)
+.team_hide_text
+	h4
+		font-family: $default-bold
+		font-size: 16px
+		color: #fff
+		margin-bottom: 10px
+	p
+		font-size: 13px
+		color: #fff
+.social
+	a
+		display: inline-block
+		text-decoration: none
+		background: rgba(0, 0, 0, 0.5)
+		width: 40px
+		height: 40px
+		color: #fff
+		+transit(all, 0.5s, ease-in-out)
+		i.fa
+			font-size: 20px
+			line-height: 40px
+		&:hover
+			background: rgba(0, 0, 0, 0.3)
 .team_item_desc
 	text-align: center
+	h3
+		font-family: $default-bold
+		color: #000
+		margin-bottom: 10px
+		+transit(all, 0.5s, ease-in-out)
+	p
+		font-size: 13px
+		line-height: 13px
+		color: #999999
