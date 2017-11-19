@@ -50,6 +50,7 @@ input
 	width: 100%
 	border: none
 	border-bottom: 1px solid #ccc
+	outline: 0
 .message
 	width: 100%
 	margin-bottom: 40px
@@ -64,6 +65,9 @@ input
 		line-height: 25px
 		color: #ccc
 		margin-bottom: 25px
+		+transit(all, 0.5s, ease-in-out)
+		&:hover
+			color: #888
 .send
 	float: right
 	i.fa
