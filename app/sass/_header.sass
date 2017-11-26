@@ -8,12 +8,13 @@ header
 	flex-direction: column
 	justify-content: flex-end
 	align-items: center
+	position: relative
 .header_main_cont
 	position: fixed
 	top: 0
 	left: 0
 	right: 0
-	background-color: rgba(0, 0, 0, 0.35)
+	background-color: rgba(0, 0, 0, 0.75)
 	display: flex
 	justify-content: center
 	z-index: 10
@@ -23,11 +24,12 @@ header
 	justify-content: center
 	justify-content: space-between
 	align-items: center
-.menu_wrap
+nav.menu_wrap
+	width: 60%
 	ul
 		padding: 0
 		display: flex
-		justify-content: space-between
+		justify-content: space-around
 		list-style: none
 	li
 		margin-right: 10px
@@ -41,11 +43,46 @@ header
 			border: 1px solid transparent
 			+transit(all, 0.5s, ease-in-out)
 			border-radius: 5px
-
-			&:hover
+			&:hover,
+			&:focus,
+			&:active
 				color: #73BFED
 				border: 1px solid #73BFED
-
+#menu
+	display: flex
+.slicknav_menu 
+	display: none
+	background: rgba(0,0,0,.75)
+	width: 100%
+	position: absolute
+	top: 80px
+	left: 0
+	padding: 0px
+.slicknav_nav
+	display: flex
+	flex-direction: column
+	justify-content: center!important
+	align-items: center
+	height: 100vh
+	a
+		&:hover
+			background: transparent
+.slicknav_btn
+	display: none
+	background: #5084A3
+	position: absolute
+	right: 6%
+	top: -60px
+	padding: 10px
+	margin: 0
+	+transit(all, 0.5s, ease-in-out)
+	&:hover
+		background: #73BFED
+.slicknav_menu .slicknav_icon-bar
+	width: 20px
+	box-shadow: none
+.slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar
+	margin-top: 5px
 .main-text
 	text-align: center
 	margin-bottom: 170px
@@ -72,6 +109,7 @@ header
 		color: #fff
 		letter-spacing: 3px
 .head_arrow
+	margin-bottom: 10px
 	img
 		width: 50px
 			

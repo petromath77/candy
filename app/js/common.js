@@ -1,5 +1,7 @@
 $(function() {
-
-	// Custom JS
+	$('#menu').slicknav({
+		prependTo:'nav',
+		parentTag:'div',
+	});
 
 });
