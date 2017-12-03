@@ -6,10 +6,26 @@
 @media only screen and (max-width : 1200px)
 	.slicknav_btn
 		display: none
+	.team_item
+		width: 30%
+		margin-bottom: 40px
+		&:last-child
+			margin-bottom: 0
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.slicknav_btn
 		display: none
+	.gallery_item
+		width: 50%
+	.team_items
+		justify-content: space-around
+	.team_item
+		width: 40%
+@media only screen and (max-width : 873px)
+	.works_menu
+		ul
+			li
+				margin-right: 10px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	#menu
@@ -19,13 +35,30 @@
 	.slicknav_btn
 		display: block
 	.menu_wrap
+
 		ul
 			li
 				width: 90%
 				text-align: center
 				margin-right: 0
 				margin-bottom: 40px
-
+	.feats_items_wrapper
+		flex-direction: column
+	.feats_item
+		width: 100%
+		margin-bottom: 40px
+		&:last-child
+			margin-bottom: 0
+	.team_item
+		width: 55%
+@media only screen and (max-width : 550px)
+	.works_menu
+			ul
+				justify-content: center
+				li
+					margin-bottom: 10px
+	.gallery_item
+		width: 100%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
