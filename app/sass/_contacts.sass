@@ -7,8 +7,9 @@
 	flex-direction: row
 	justify-content: space-between
 	margin-top: 80px
+	flex-wrap: wrap
 .adress_descr
-	width: 22%
+	width: 20%
 	h2
 		font-size: 22px
 		line-height: 35px
@@ -20,7 +21,7 @@
 		color: #666666
 
 .form_wrap
-	width: 68%
+	width: 70%
 	clear: both
 	h1
 		font-size: 24px
@@ -61,24 +62,35 @@ input
 	flex-direction: column
 	align-items: center
 	margin-top: 20px
-	i.fa
-		font-size: 25px
-		line-height: 25px
-		color: #ccc
+	a
 		margin-bottom: 25px
-		+transit(all, 0.5s, ease-in-out)
-		&:hover
-			color: #888
+		i.fa
+			font-size: 25px
+			line-height: 25px
+			color: #ccc
+			+transit(all, 0.5s, ease-in-out)
+			&:hover
+				color: #888
 .send
 	float: right
-	i.fa
-		color: #5084A3
-		font-size: 20px
-		line-height: 20px
-		margin-right: 10px
 	a
 		font-size: 16px
 		line-height: 16px
 		text-decoration: none
 		color: #000
-			
+		+transit(all, 0.5s, ease-in-out)
+		&:hover,
+		&:focus
+			color: #888
+		i.fa
+			color: #5084A3
+			font-size: 20px
+			line-height: 20px
+			margin-right: 10px
+
+
+
+
+
+
+

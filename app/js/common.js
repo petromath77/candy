@@ -3,5 +3,5 @@ $(function() {
 		prependTo:'nav',
 		parentTag:'div',
 	});
-
+	$('.mix_wrap').mixItUp();
 });

@@ -25,22 +25,22 @@
 		flex-wrap: wrap
 		li
 			margin-right: 15px
-			&:last-child
-				margin-right: 0
-			a
-				text-decoration: none
-				font-family: $default-bold
-				font-size: 14px
-				line-height: 14px
-				padding: 5px 15px
-				color: #062033
-				+transit(all, 0.5s, ease-in-out)
-				&:hover,
+			text-decoration: none
+			font-family: $default-bold
+			font-size: 14px
+			line-height: 14px
+			padding: 5px 15px
+			color: #062033
+			cursor: pointer
+			+transit(all, 0.5s, ease-in-out)
+			&:hover,
 				&:focus
 					background: #5084A3
 					color: #fff
 					border-radius: 5px
-			.w_active
+			&:last-child
+				margin-right: 0
+			&.active
 				background: #5084A3
 				color: #fff
 				border-radius: 5px
