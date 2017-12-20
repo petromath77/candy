@@ -31,6 +31,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/slicknav/jquery.slicknav.js',
 		'app/libs/circlebar/circlebar.js',
 		'app/libs/mixitup/mixitup.min.js',
+		'app/libs/scroll2id/PageScroll2id.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
