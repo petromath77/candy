@@ -28,11 +28,12 @@
 		line-height: 35px
 		margin-bottom: 50px
 form
+	position: relative
 	display: flex
 	flex-direction: row
 	justify-content: space-between
 	flex-wrap: wrap
-
+	
 .name,
 .email,
 .message
@@ -72,22 +73,32 @@ input
 			&:hover
 				color: #888
 .send
-	float: right
-	a
+	position: absolute
+	bottom: -20px
+	right: 0
+	button
+		background: transparent
+		border: none
 		font-size: 16px
 		line-height: 16px
 		text-decoration: none
 		color: #000
+		cursor: pointer
 		+transit(all, 0.5s, ease-in-out)
 		&:hover,
 		&:focus
 			color: #888
-		i.fa
-			color: #5084A3
-			font-size: 20px
-			line-height: 20px
-			margin-right: 10px
-
+	i.fa
+		color: #5084A3
+		font-size: 20px
+		line-height: 20px
+		margin-right: 10px
+.help-block.text-danger
+	ul
+		list-style: none
+		li
+			color: #FF7373
+			margin-top: 7px
 
 
 

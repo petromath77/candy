@@ -32,6 +32,8 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/circlebar/circlebar.js',
 		'app/libs/mixitup/mixitup.min.js',
 		'app/libs/scroll2id/PageScroll2id.min.js',
+		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
+		'app/libs/jqBootstrapValidation/jqBootstrapValidation.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

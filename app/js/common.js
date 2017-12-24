@@ -10,9 +10,16 @@ $(function() {
 		$(this).addClass('active_a');
 	});
 	$('.slicknav_nav li a').mPageScroll2id();
-	$('.slicknav_nav li a').on('click', function(){
+	$('.slicknav_nav li a').on('click', function(e){
+		
 		$('.slicknav_nav li a').removeClass('active_a');
 		$(this).addClass('active_a');
-		//$('.slicknav_nav').slideUp(600);
+
 	});
+	$('.popup_content').magnificPopup({
+			disableOn: 700,
+			type: 'inline',
+			showCloseBtn: true
+		});
+	 $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 });
