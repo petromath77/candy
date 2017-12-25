@@ -76,23 +76,26 @@ input
 	position: absolute
 	bottom: -20px
 	right: 0
-	button
-		background: transparent
-		border: none
-		font-size: 16px
-		line-height: 16px
-		text-decoration: none
-		color: #000
-		cursor: pointer
-		+transit(all, 0.5s, ease-in-out)
-		&:hover,
-		&:focus
-			color: #888
+	display: flex
+	flex-direction: row
+	justify-content: center
 	i.fa
 		color: #5084A3
 		font-size: 20px
 		line-height: 20px
 		margin-right: 10px
+.button
+	background: transparent
+	border: none
+	font-size: 16px
+	line-height: 16px
+	text-decoration: none
+	color: #000
+	cursor: pointer
+	+transit(all, 0.5s, ease-in-out)
+	&:hover,
+	&:focus
+		color: #888
 .help-block.text-danger
 	ul
 		list-style: none
