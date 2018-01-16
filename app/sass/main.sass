@@ -8,7 +8,6 @@
 @import "team"
 @import "facts"
 @import "contacts"
-@import "map"
 @import "footer"
 
 *
@@ -79,6 +78,7 @@ section
 		text-transform: uppercase
 		color: #5084A3
 		margin-bottom: 10px
+		white-space: nowrap
 .sub_title
 	text-align: center
 	i.fa.fa-heart-o
@@ -108,12 +108,13 @@ section
 	top: 0
 	right: 0
 	z-index: 999
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
 .loader_inner
 	background: url('../img/loader.gif') no-repeat center center 
 	background-size: cover
-	position: absolute
-	left: 35%
-	top: 20%
 	width: 400px
 	height: 400px
 	
